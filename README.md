@@ -43,6 +43,7 @@ SQL-запросы
 Ответила на вопросы из [модуля 1](https://github.com/EkaterinaSovetkina/DE-101-Module1).
 
 Прибыль по категориям за 2018 год.
+
 SQL-запрос
 ``` js
 select Category as 'Категория', sum(Profit) as 'Прибыль'
@@ -50,6 +51,8 @@ from orders
 where Order_Date between '2018-01-01' and '2018-12-31'
 group by Category;
 ```
+
 Результат
+
 ![Снимок экрана 2022-08-25 160051](https://user-images.githubusercontent.com/108063450/186658922-bb65f935-d432-44bf-8c2a-3d7b3e619833.png)
 
