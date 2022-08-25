@@ -8,7 +8,7 @@
 
 ``` js
 CREATE TABLE orders(
-   Row_ID        INTEGER  NOT NULL PRIMARY KEY 
+   Row_ID        INTEGER  NOT NULL PRIMARY KEY AUTO_INCREMENT
   ,Order_ID      VARCHAR(14) NOT NULL
   ,Order_Date    DATE  NOT NULL
   ,Ship_Date     DATE  NOT NULL
@@ -32,6 +32,9 @@ CREATE TABLE orders(
 );
 ```
 
+Результат
+
+![Снимок экрана 2022-08-25 123156](https://user-images.githubusercontent.com/108063450/186616667-cfce9da1-3325-4625-a3ce-46b40d3b5d8f.png)
 
 
 SQL-запросы
