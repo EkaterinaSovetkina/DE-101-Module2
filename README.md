@@ -59,3 +59,19 @@ group by Category;
 
 ![Снимок экрана 2022-08-25 160051](https://user-images.githubusercontent.com/108063450/186658922-bb65f935-d432-44bf-8c2a-3d7b3e619833.png)
 
+
+Распределение прибыли по штатам за 2018 год по убыванию.
+
+SQL-запрос
+``` js
+select State as 'Штат', sum(Profit) as Sum_of_profit 
+from orders 
+where Order_Date between '2018-01-01' and '2018-12-31'
+group by State
+order by Sum_of_profit desc ;
+```
+
+Результат
+
+![Снимок экрана 2022-08-25 163449](https://user-images.githubusercontent.com/108063450/186666054-7b04e713-9d92-4804-84cf-4aa3b9eba3ff.png)
+
