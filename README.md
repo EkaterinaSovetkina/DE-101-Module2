@@ -75,3 +75,17 @@ order by Sum_of_profit desc ;
 
 ![Снимок экрана 2022-08-25 163449](https://user-images.githubusercontent.com/108063450/186666054-7b04e713-9d92-4804-84cf-4aa3b9eba3ff.png)
 
+**Максимальная прибыль по подкатегориям по убыванию.**
+
+SQL-запрос
+``` js
+select distinct SubCategory, max(Profit)
+over (partition by SubCategory) as 'Max_Profit'
+from orders o 
+order by Max_Profit desc ;
+```
+
+Результат
+
+![Снимок экрана 2022-08-26 122932](https://user-images.githubusercontent.com/108063450/186858986-6413a8bf-25a2-4c5f-b3a5-64ad7e6b8197.png)
+
